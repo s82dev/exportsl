@@ -1,0 +1,18 @@
+// Plain Java project - no Minecraft, no Fabric, no Loom. If you already
+// have a JDK and Gradle (or just `javac`/`jar`, see README.md) this builds
+// a drop-in S.mods external module.
+plugins {
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+    archiveBaseName = 'example-clock'
+}
